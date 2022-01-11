@@ -10,7 +10,7 @@ case "$1" in
 		sudo rm /var/lib/mosquitto_local/mosquitto.db
 		sudo service mosquitto_local start
 		echo "reset done, now running atreboot.sh..."
-		./runs/atreboot.sh
+		sudo ./runs/atreboot.sh
 		echo "all done";;
 	*)
 		echo "please pass \"clearall\" as parameter if you really want to reset all data stored in the internal and external broker"
